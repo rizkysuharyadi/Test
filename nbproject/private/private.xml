@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/director/edit_order.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/src/java/controller/LoginController.java</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/src/java/controller/DeleteStockController.java</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/administrator/new_user.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/manager/manage_processes.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/login.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/manager/edit_stock.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/src/java/controller/DeleteProcessController.java</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/search.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/css/manageuser.css</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/manager/manage_stocks.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/src/java/controller/EditUserController.java</file>
+        </group>
+        <group>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/src/java/controller/LoginController.java</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/manager/manage_processes.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/src/java/controller/DeleteProcessController.java</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/manager/manage_stocks.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/src/java/model/OrderProducts.java</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/director/edit_order.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/src/java/controller/DeleteStockController.java</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/administrator/new_user.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/login.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/manager/edit_stock.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/src/java/controller/NewProcessController.java</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/src/java/controller/ProcessingScheduleController.java</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/WEB-INF/jsp/search.jsp</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/web/css/manageuser.css</file>
+            <file>file:/Users/rizkysuharyadi/Downloads/flow_erp-master/src/java/controller/EditUserController.java</file>
+        </group>
+    </open-files>
+</project-private>

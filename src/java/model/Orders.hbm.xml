@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 17, 2017 8:45:27 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Orders" table="orders" catalog="db_enterpriseapps" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="requester" type="string">
+            <column name="requester" length="50" not-null="true" />
+        </property>
+        <property name="processingOrder" type="int">
+            <column name="processing_order" not-null="true" />
+        </property>
+        <property name="finished" type="boolean">
+            <column name="finished" not-null="true" />
+        </property>
+        <property name="targetDate" type="date">
+            <column name="target_date" length="10" not-null="true" />
+        </property>
+        <set name="orderProductses" table="order_products" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="order_id" not-null="true" />
+            </key>
+            <one-to-many class="model.OrderProducts" />
+        </set>
+    </class>
+</hibernate-mapping>

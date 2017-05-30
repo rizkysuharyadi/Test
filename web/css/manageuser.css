@@ -1,0 +1,120 @@
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  width: 650px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 60%;
+  height: 45px;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #f1bb09;
+  width: 21%;
+  border: 1px solid #f1bb09;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 12px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active{
+  text-decoration: none;
+  color: #bd0024;
+  border-color: #bd0024;
+  background: #FFFFFF;
+}
+.form button#addUser{
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #33cccc;
+  width: 20%;
+  border: 1px solid #33cccc;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 12px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button#addUser:hover,.form button#addUser:active{
+	text-decoration: none;
+  color: #33cccc;
+  border-color: #33cccc;
+  background: #FFFFFF;
+}
+body {
+  background-image: url("img/blue.jpg"); /* fallback for old browsers */
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+a    { text-decoration: none; }
+p    { text-align: center; }
+.table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #3b3b3b;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+@media screen and (max-width: 580px) {
+  .table {
+    display: block;
+  }
+}
+
+.row {
+  display: table-row;
+  background: #f6f6f6;
+}
+.row:nth-of-type(odd) {
+  background: #21e7e7;
+}
+.row.header {
+  font-weight: 900;
+  color: #ffffff;
+  background: #33cccc;
+}
+@media screen and (max-width: 580px) {
+  .row {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+.cell {
+  padding: 6px 12px;
+  display: table-cell;
+}
+@media screen and (max-width: 580px) {
+  .cell {
+    padding: 2px 12px;
+    display: block;
+  }
+}

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+    <bean class="controller.LoginController" id="loginKey"/>
+    <bean class="controller.TestController" id="testKey"/>
+    <bean class="controller.FactoryStatusController" id="factoryStatusKey"/>
+    
+    <bean class="controller.ManageStocksController" id="manageStocksKey"/>
+    <bean class="controller.NewStockController" id="newStockKey"/>
+    <bean class="controller.DeleteStockController" id="deleteStockKey"/>
+    <bean class="controller.EditStockController" id="editStockKey"/>
+    <bean class="controller.SearchStocksController" id="searchStocksKey"/>
+    
+    <bean class="controller.ProcessingScheduleController" id="processingScheduleKey"/>
+    <bean class="controller.ProcessDetailsController" id="processDetailsKey"/>
+    <bean class="controller.ManageProcessesController" id="manageProcessesKey"/>
+    <bean class="controller.SearchProcessesController" id="searchProcessesKey"/>
+    <bean class="controller.NewProcessController" id="newProcessKey"/>
+    <bean class="controller.DeleteProcessController" id="deleteProcessKey"/>
+    
+    <bean class="controller.ManageUsersController" id="manageUsersKey"/>
+    <bean class="controller.NewUserController" id="newUserKey"/>
+    <bean class="controller.EditUserController" id="editUserKey"/>
+    <bean class="controller.DeleteUserController" id="deleteUserKey"/>
+    <bean class="controller.SearchUsersController" id="searchUsersKey"/>
+    
+    <bean class="controller.ManageOrdersController" id="manageOrdersKey"/>
+    <bean class="controller.NewOrderController" id="newOrderKey"/>
+    <bean class="controller.EditOrderController" id="editOrderKey"/>
+    <bean class="controller.DeleteOrderController" id="deleteOrderKey"/>
+    <bean class="controller.SearchOrdersController" id="searchOrdersKey"/>
+    
+    <bean class="controller.ReadLogsController" id="readLogsKey"/>
+    <!--
+    Most controllers will use the ControllerClassNameHandlerMapping above, but
+    for the index controller we are using ParameterizableViewController, so we must
+    define an explicit mapping for it.
+    -->
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="index.htm">indexController</prop>
+                <prop key="login.htm">loginKey</prop>
+                <prop key="test.htm">testKey</prop>
+                <prop key="factory_status.htm">factoryStatusKey</prop>
+                
+                <prop key="manage_stocks.htm">manageStocksKey</prop>
+                <prop key="new_stock.htm">newStockKey</prop>
+                <prop key="delete_stock.htm">deleteStockKey</prop>
+                <prop key="edit_stock.htm">editStockKey</prop>
+                <prop key="search_stocks.htm">searchStocksKey</prop>
+                
+                <prop key="processing_schedule.htm">processingScheduleKey</prop>
+                <prop key="process_details.htm">processDetailsKey</prop>
+                <prop key="manage_processes.htm">manageProcessesKey</prop>
+                <prop key="search_processes.htm">searchProcessesKey</prop>
+                <prop key="new_process.htm">newProcessKey</prop>
+                <prop key="delete_process.htm">deleteProcessKey</prop>
+                
+                <prop key="manage_users.htm">manageUsersKey</prop>
+                <prop key="new_user.htm">newUserKey</prop>
+                <prop key="edit_user.htm">editUserKey</prop>
+                <prop key="delete_user.htm">deleteUserKey</prop>
+                <prop key="search_users.htm">searchUsersKey</prop>
+                
+                <prop key="manage_orders.htm">manageOrdersKey</prop>
+                <prop key="new_order.htm">newOrderKey</prop>
+                <prop key="edit_order.htm">editOrderKey</prop>
+                <prop key="delete_order.htm">deleteOrderKey</prop>
+                <prop key="search_orders.htm">searchOrdersKey</prop>
+                
+                <prop key="read_logs.htm">readLogsKey</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp" />
+
+    <!--
+    The index controller.
+    -->
+    <bean name="indexController"
+          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+          p:viewName="index" />
+
+</beans>

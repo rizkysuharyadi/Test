@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 17, 2017 8:45:27 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.ProcessStages" table="process_stages" catalog="db_enterpriseapps" optimistic-lock="version">
+        <composite-id name="id" class="model.ProcessStagesId">
+            <key-property name="processId" type="int">
+                <column name="process_id" />
+            </key-property>
+            <key-property name="stageIndex" type="int">
+                <column name="stage_index" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="processes" class="model.Processes" update="false" insert="false" fetch="select">
+            <column name="process_id" not-null="true" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="time" type="float">
+            <column name="time" precision="12" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
